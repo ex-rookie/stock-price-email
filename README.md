@@ -12,7 +12,8 @@ AWS Charges applicable only for Lambda as opposed to the SMS option where the SN
  - sender_email is assumed to be Gmail here, the usual "Less Secure" apps and security restrictions apply, the below might help:
      1) Login to your gmail account.
      2) Go to https://www.google.com/settings/security/lesssecureapps and Turn On this feature.
-     3) Go to https://accounts.google.com/DisplayUnlockCaptcha and click Continue.
+     3) Go to https://accounts.google.com/DisplayUnlockCaptcha and click Continue
+ - receiver_email can be any desired email address that you wanted to get the stock price to.
  - If running on AWS Lambda, the "requests" module can be imported from botocode library, and the Environment variables can be used from Lambda(paste the contents of stock-price-email-lambda.md file into a new and completely blank Python3.6 Lambda function)
  
  
