@@ -1,5 +1,5 @@
 # stock-price-sms
-Use AWS SNS(and optionally Lambda) to schedule receiving a text message with stock price of a desired company
+Use Python SMTP, Gmail(and optionally Lambda) to schedule receiving an email with stock price of a desired company
 
 ### Note:
 AWS Charges applicable only for Lambda as opposed to the SMS option where the SNS charges also apply
@@ -9,7 +9,7 @@ AWS Charges applicable only for Lambda as opposed to the SMS option where the SN
  - Python 3.6
  - "company_code" refers to the Stock Exchange code: GOOG, AAPL, AMZN etc
  - "exchange_api_key" needs to be obtained from https://openexchangerates.org/account/app-ids (Sign Up required, 1000 calls free every month)
- - sender_email is assumed to be Gmail here, the usual "Less Secure" apps security restrictions apply
+ - sender_email is assumed to be Gmail here, the usual "Less Secure" apps and security restrictions apply
  - If running on AWS Lambda, the "requests" module can be imported from botocode library, and the Environment variables can be used from Lambda(paste the contents of stock-price-email-lambda.md file into a new and completely blank Python3.6 Lambda function)
  
  
