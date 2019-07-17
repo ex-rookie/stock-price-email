@@ -1,4 +1,4 @@
-# stock-price-sms
+# stock-price-email
 Use Python SMTP, Gmail(and optionally Lambda) to schedule receiving an email with stock price of a desired company
 
 ### Note:
