@@ -9,7 +9,10 @@ AWS Charges applicable only for Lambda as opposed to the SMS option where the SN
  - Python 3.6
  - "company_code" refers to the Stock Exchange code: GOOG, AAPL, AMZN etc
  - "exchange_api_key" needs to be obtained from https://openexchangerates.org/account/app-ids (Sign Up required, 1000 calls free every month)
- - sender_email is assumed to be Gmail here, the usual "Less Secure" apps and security restrictions apply
+ - sender_email is assumed to be Gmail here, the usual "Less Secure" apps and security restrictions apply, the below might help:
+     1) Login to your gmail account.
+     2) Go to https://www.google.com/settings/security/lesssecureapps and Turn On this feature.
+     3) Go to https://accounts.google.com/DisplayUnlockCaptcha and click Continue.
  - If running on AWS Lambda, the "requests" module can be imported from botocode library, and the Environment variables can be used from Lambda(paste the contents of stock-price-email-lambda.md file into a new and completely blank Python3.6 Lambda function)
  
  
