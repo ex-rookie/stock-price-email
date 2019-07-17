@@ -30,7 +30,7 @@ For scheduling in cron (8 am everyday from an EC2 instance):
 0 8 * * * python /home/ec2-user/stock-price-email.py
 ```
 
-### Further development:
+### Further development: 
 
 - Can be improved by adding more company codes since the Yahoo Finance URL accepts comma separated codes
 - Can be used with CloudFormation template that creates the Lambda function, the required roles and the CloudWatch cron schedules
